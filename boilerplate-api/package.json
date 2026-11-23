@@ -1,0 +1,16 @@
+{
+    "name": "boilerplate-api",
+    "version": "1.0.0",
+    "description": "Boilerplate de API em camadas: Express + Mongoose",
+    "type": "module",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^18.0.10",
+        "express": "^5.3.0",
+        "mongoose": "^9.12.1"
+    }
+}
