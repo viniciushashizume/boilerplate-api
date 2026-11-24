@@ -13,6 +13,12 @@ let itemSchema = new mongoose.Schema({
         min: [0, "A quantidade não pode ser negativa"],
         default: 1,
     },
+
+        dataNascimento: {
+            type: Date,
+            max: [Date.now, "A data de nascimento tem que ser atual"],
+            min: ['1900-01-01', 'Ano minimo: 1900']
+        }
 }, {
     // timestamps: cria e atualiza sozinho os campos createdAt e updatedAt
     timestamps: true,
